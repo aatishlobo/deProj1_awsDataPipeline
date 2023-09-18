@@ -1,5 +1,4 @@
 # Data Engineering YouTube Trending Video Data
-inspired by tutorial at https://www.youtube.com/watch?v=yZKJFKu49Dk by Darshil Parmar
 
 ## Overview
 This project involes the storage, cleaning, and management of data regarding trending Yourtube videos from various countries including view counts, like counts, categories, region, etc.
