@@ -26,7 +26,7 @@ Dataset contains CSV files with statistics on trending YouTube videos over the c
 https://www.kaggle.com/datasets/datasnaek/youtube-new
 
 ## Architecture Diagram
-Architecture Overview:
+Step by Step Overview:
 1. Store imported dataset into S3 buckets
 2. Build Glue Crawler to create data schema (metadata) for use in future operations
 3. Create ETL Job, Lambda Function to clean data and deposit data in another S3 bucket
