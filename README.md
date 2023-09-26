@@ -26,7 +26,15 @@ Dataset contains CSV files with statistics on trending YouTube videos over the c
 https://www.kaggle.com/datasets/datasnaek/youtube-new
 
 ## Architecture Diagram
-In a nutshell, data is stored in s3 buckets, cleaned and transformed using multiple AWS Glue Etl Jobs, AWS Lambda functions, and AWS Athena queries, stored in a different s3 bucket, and finally AWS Quicksight is used to build a dashboard.
+Architecture Overview:
+1. Store imported dataset into S3 buckets
+2. Build Glue Crawler to create data schema (metadata) for use in future operations
+3. Create ETL Job, Lambda Function to clean data and deposit data in another S3 bucket
+4. Build Glue Crawler to created schema for cleaned data
+5. Build ETL Job to convert cleaned csv data to parquet files
+6. Write Lambda function to clean and convert any new data added to the S3 buckets
+7. Build final ETL Job to join cleaned data and store in a final S3 bucket
+8. Create dashboards with Amazon Quicksight using data generated from last step
 
 <img src="architecture.jpeg">
 
