@@ -44,5 +44,3 @@ Questions/considerations when making the dashboard:
 - How much does each region view, like, and comment on trending videos of various categories?
 - Which trending video categories have the highest views, likes, dislikes, and comments across multiple regions?
 - What correlation might data like like counts and comment counts have per category of video?
-
-  include dashboard screenshots
